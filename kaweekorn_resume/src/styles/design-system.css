@@ -1,0 +1,56 @@
+/* Design System - Custom CSS Properties */
+:root {
+  /* Colors from your Figma design */
+  --color-primary: #FAFAF9;
+  --color-primary-dark: #374151;
+  --color-secondary: #6366F1;
+  --color-accent: #EF4444;
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #0A2341;
+  --color-background: #FAFAF9;
+  --color-background-alt: #F3F4F6;
+  
+  /* Typography */
+  --font-family-heading: "Playfair Display", serif;
+  --font-family-body: system-ui, sans-serif;
+  --font-family-mono: "JetBrains Mono", Consolas, Monaco, monospace;
+  
+  --font-size-hero: 3.5rem;
+  --font-size-h1: 2.25rem;
+  --font-size-h2: 1.875rem;
+  --font-size-h3: 1.5rem;
+  --font-size-body: 1rem;
+  --font-size-small: 0.875rem;
+  
+  /* Spacing (based on your 12-column grid system) */
+  --space-gutter: 1.5rem;    /* 24px - Column gutter */
+  --space-margin: 5rem;      /* 80px - Page margins */
+  --space-xs: 0.25rem;       /* 4px */
+  --space-sm: 0.5rem;        /* 8px */
+  --space-md: 1rem;          /* 16px */
+  --space-lg: 2rem;          /* 32px */
+  --space-xl: 3rem;          /* 48px */
+  --space-2xl: 4rem;         /* 64px */
+  --space-3xl: 5rem;         /* 80px - Matches your margin */
+  
+  /* Grid System */
+  --container-max-width: 1280px;  /* 1440px - 160px margins */
+  --grid-columns: 12;
+  --grid-gutter: 1.5rem;          /* 24px */
+  --grid-margin: 5rem;            /* 80px */
+  
+  /* Border Radius */
+  --radius-sm: 0.375rem;  /* 6px */
+  --radius-md: 0.5rem;    /* 8px */
+  --radius-lg: 0.75rem;   /* 12px */
+  --radius-xl: 1rem;      /* 16px */
+  
+  /* Shadows */
+  --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-card-hover: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+}
