@@ -2,6 +2,8 @@
 import Header from './components/sections/Header';
 import About from './components/sections/About';
 import Skills from './components/sections/Skills';
+import Archieve from './components/sections/Archieve';
+import Activities from './components/sections/Activities';
 
 function App() {
   return (
@@ -10,13 +12,14 @@ function App() {
       
       {/* Header spans full width */}
       <Header />
-      
+     
       {/* Main content full width */}
       <div className="w-full">
-        
         {/* Main Content */}
         <main className="">
           <About />
+          <Archieve />
+          <Activities />
           <Skills />
           
           {/* TODO: Add Experience, Projects, Contact sections */}

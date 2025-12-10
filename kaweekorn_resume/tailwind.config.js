@@ -15,6 +15,7 @@ export default {
         secondary: '#6366F1',
         accent: '#EF4444',
         gold: '#D4AF37',            // gold hover color
+        bronze: '#C5A059',          // bronze border color
         cream: '#FAFAF9',           
         'cream-alt': '#F3F4F6',     
         navy: '#0A2341',            // navbar text color
@@ -24,14 +25,19 @@ export default {
       spacing: {
         'gutter': '1.5rem',     // 24px
         'margin': '5rem',       // 80px
+        '2.25': '2.25rem',      // 36px - padding ฝั่งละ
+        'xl': '3rem',           // 48px
+        '2xl': '4rem',          // 64px
+        '3xl': '5rem',          // 80px
+        '4xl': '6rem',          // 96px
         '18': '4.5rem',         // 72px
         '88': '22rem',          // 352px
         '128': '32rem'          // 512px
       },
       // Container settings for your 12-column grid
       maxWidth: {
-        'container': '1280px',  // Your content width
-        'grid': '80rem'         // 1280px in rem
+        'container': '1440px',  // Your content width
+        'grid': '90rem'         // 1440px in rem
       },
       // Custom Font Sizes
       fontSize: {
