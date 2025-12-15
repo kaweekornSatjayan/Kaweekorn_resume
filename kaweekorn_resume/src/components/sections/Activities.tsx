@@ -56,7 +56,7 @@ const Activities: React.FC = () => {
             className="flex w-full h-full transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
-            {activitiesData.map((activity, index) => (
+            {activitiesData.map((activity) => (
               <div
                 key={activity.id}
                 className="w-full h-full flex-shrink-0 relative"
