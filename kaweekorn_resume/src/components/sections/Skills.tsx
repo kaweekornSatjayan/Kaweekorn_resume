@@ -36,12 +36,12 @@ const Skills: React.FC = () => {
               </h3>
               
               {/* Skills List */}
-              <div className="font-mono text-xs md:text-sm lg:text-base text-primary-dark/80 leading-loose max-w-3xl mx-auto">
+              <div className="font-mono text-xs md:text-sm lg:text-base text-primary-dark/80 leading-loose max-w-3xl mx-auto break-words">
                 {skills.map((skill, skillIndex) => (
-                  <span key={skillIndex}>
+                  <span key={skillIndex} className="inline-block">
                     {skill}
                     {skillIndex < skills.length - 1 && (
-                      <span className="mx-xl text-primary-dark/40">|</span>
+                      <span className="mx-sm md:mx-lg text-primary-dark/40">|</span>
                     )}
                   </span>
                 ))}
