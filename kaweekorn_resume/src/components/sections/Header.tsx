@@ -119,7 +119,9 @@ const Header: React.FC = () => {
               <li>
                 <a
                   href="#about"
-                  className="block text-navy hover:text-gold transition-colors"
+                  className={`block text-navy hover:text-gold transition-colors ${
+                    activeSection === 'about' ? 'text-gold font-bold' : ''
+                  }`}
                   onClick={(e) => handleLinkClick(e, 'about')}
                 >
                   About
@@ -128,7 +130,9 @@ const Header: React.FC = () => {
               <li>
                 <a
                   href="#archive"
-                  className="block text-navy hover:text-gold transition-colors"
+                  className={`block text-navy hover:text-gold transition-colors ${
+                    activeSection === 'archive' ? 'text-gold font-bold' : ''
+                  }`}
                   onClick={(e) => handleLinkClick(e, 'archive')}
                 >
                   Archive
@@ -137,7 +141,9 @@ const Header: React.FC = () => {
               <li>
                 <a
                   href="#activities"
-                  className="block text-navy hover:text-gold transition-colors"
+                  className={`block text-navy hover:text-gold transition-colors ${
+                    activeSection === 'activities' ? 'text-gold font-bold' : ''
+                  }`}
                   onClick={(e) => handleLinkClick(e, 'activities')}
                 >
                   Activities
@@ -146,7 +152,9 @@ const Header: React.FC = () => {
               <li>
                 <a
                   href="#skills"
-                  className="block text-navy hover:text-gold transition-colors"
+                  className={`block text-navy hover:text-gold transition-colors ${
+                    activeSection === 'skills' ? 'text-gold font-bold' : ''
+                  }`}
                   onClick={(e) => handleLinkClick(e, 'skills')}
                 >
                   Skills
@@ -155,7 +163,9 @@ const Header: React.FC = () => {
               <li>
                 <a
                   href="#education"
-                  className="block text-navy hover:text-gold transition-colors"
+                  className={`block text-navy hover:text-gold transition-colors ${
+                    activeSection === 'education' ? 'text-gold font-bold' : ''
+                  }`}
                   onClick={(e) => handleLinkClick(e, 'education')}
                 >
                   Education
@@ -164,7 +174,9 @@ const Header: React.FC = () => {
               <li>
                 <a
                   href="#contact"
-                  className="block text-navy hover:text-gold transition-colors"
+                  className={`block text-navy hover:text-gold transition-colors ${
+                    activeSection === 'contact' ? 'text-gold font-bold' : ''
+                  }`}
                   onClick={(e) => handleLinkClick(e, 'contact')}
                 >
                   Contact
