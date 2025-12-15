@@ -20,7 +20,7 @@ const About: React.FC = () => {
         </div>
         <div className="photo">
           <img 
-            src="/images/me.jpg" 
+            src="/Kaweekorn_resume/images/me.jpg" 
             alt="Profile" 
             className="w-64 h-64 border-2 border-bronze rounded-lg object-cover"
           />

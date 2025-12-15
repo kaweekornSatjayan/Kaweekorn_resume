@@ -1,28 +1,28 @@
 [
   {
     "id": 1,
-    "img": "/images/Project1.jpg",
+    "img": "/Kaweekorn_resume/images/Project1.jpg",
     "title": "Gold Medal, SCiUS Forum 14th, Thammasat University, Rangsit campus",
     "shortDescription": "Achieved Gold Medal for a project predicting KDML 105 rice moisture content. Analyzed data with SPSS to build a regression model and deployed it on a web application (HTML, CSS, JS) that predicts moisture based on density.",
     "track": ["Frontend", "React", "TypeScript"]
   },
   {
     "id": 2,
-    "img": "/images/Project2.jpg",
+    "img": "/Kaweekorn_resume/images/Project2.jpg",
     "title": "First Place – SATIT Hackathon: Innovation for Equitable Education",
     "shortDescription": "First Place – SATIT Hackathon: Innovation for Equitable Education by developing and pitching an innovative solution concept designed to provide equitable access to educational resources.",
     "track": ["Full-stack", "Node.js", "MongoDB"]
   },
   {
     "id": 3,
-    "img": "/images/Project3.jpg",
+    "img": "/Kaweekorn_resume/images/Project3.jpg",
     "title": "POSN computer Camp 2",
     "shortDescription": "Developed advanced algorithms and data structures skills using C++, applying problem-solving, algorithm design, programming proficiency, and efficiency in competitive programming.",
     "track": ["Mobile", "React Native", "Security"]
   },
   {
     "id": 4,
-    "img": "/images/Project4.jpg",
+    "img": "/Kaweekorn_resume/images/Project4.jpg",
     "title": "Honorable Mention – Web Page Creation Competition 2022",
     "shortDescription": "Received Honorable Mention for a web page demonstrating proficiency in UI design, content creation, and web development tools at Computer Education KKU Open House 2022, Faculty of Education, Khon Kaen Universit",
     "track": ["Data Science", "Python", "Visualization"]
