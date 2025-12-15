@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-3xl px-6 md:px-lg bg-cream">
       <div className="container mx-auto max-w-6xl text-center">
-        <h2 className="font-haeding text-2xl md:text-4xl lg:text-5xl xl:text-6xl  text-primary-dark mb-xl">
+        <h2 className="font-heading text-2xl md:text-4xl lg:text-5xl xl:text-6xl  text-primary-dark mb-xl">
           Ready to build something great?
         </h2>
         
