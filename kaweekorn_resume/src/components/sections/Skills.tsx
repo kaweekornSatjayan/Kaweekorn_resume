@@ -17,11 +17,10 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <section id="skills" className="bg-cream py-6xl px-4 md:px-xl">
+    <section id="skills" className="bg-cream py-6xl px-6 md:px-xl">
       <div className="max-w-container mx-auto">
-        {/* Section Header */}
         <div className="text-center mb-4xl">
-          <h2 className="text-3xl md:text-5xl font-bold font-serif text-primary-dark mb-xl tracking-wide">
+          <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold font-serif text-primary-dark mb-xl tracking-wide">
             Skills & Expertise
           </h2>
           <div className="w-16 h-px bg-primary-dark mx-auto"></div>
@@ -37,7 +36,7 @@ const Skills: React.FC = () => {
               </h3>
               
               {/* Skills List */}
-              <div className="font-mono text-sm md:text-base text-primary-dark/80 leading-loose max-w-3xl mx-auto">
+              <div className="font-mono text-xs md:text-sm lg:text-base text-primary-dark/80 leading-loose max-w-3xl mx-auto">
                 {skills.map((skill, skillIndex) => (
                   <span key={skillIndex}>
                     {skill}

@@ -60,24 +60,24 @@ const Education: React.FC = () => {
               <div key={index} className="border-2 border-dashed border-primary-dark p-lg md:p-xl">
                 <div className="grid md:grid-cols-3 gap-lg items-start text-center md:text-left">
                   <div className="md:col-span-1">
-                    <div className="text-lg md:text-xl font-bold font-mono  text-primary-dark mb-sm">
+                    <div className="text-base md:text-lg xl:text-xl font-bold font-mono  text-primary-dark mb-sm">
                       {item.period}
                     </div>
                     {item.description && (
-                      <div className="text-sm font-mono text-gray-600">
+                      <div className="text-xs md:text-sm font-mono text-gray-600">
                         {item.description}
                       </div>
                     )}
                   </div>
                   
                   <div className="md:col-span-2">
-                    <h3 className="text-xl font-heading md:text-2xl font-bold font-serif text-primary-dark mb-sm">
+                    <h3 className="text-lg md:text-xl xl:text-2xl font-heading font-bold font-serif text-primary-dark mb-sm">
                       {item.institution}
                     </h3>
-                    <p className="text-base font-mono md:text-lg text-gray-700 mb-sm">
+                    <p className="text-sm md:text-base xl:text-lg font-mono text-gray-700 mb-sm">
                       {item.location}
                     </p>
-                    <p className="text-base font-mono md:text-lg text-primary-dark font-medium">
+                    <p className="text-sm md:text-base xl:text-lg font-mono text-primary-dark font-medium">
                       {item.degree}
                     </p>
                   </div>
@@ -89,14 +89,14 @@ const Education: React.FC = () => {
 
         {/* Certifications Section */}
         <div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-serif text-primary-dark mb-xl text-center">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold font-serif text-primary-dark mb-xl text-center">
             Certifications
           </h2>
           
           <div className="space-y-xl">
             {certificationsData.map((certification, index) => (
               <div key={index} className="border-2 border-dashed border-primary-dark p-lg md:p-xl">
-                <h3 className="text-xl md:text-2xl font-bold font-serif text-primary-dark mb-lg text-center md:text-left">
+                <h3 className="text-lg md:text-xl xl:text-2xl font-bold font-serif text-primary-dark mb-lg text-center md:text-left">
                   {certification.title}
                 </h3>
                 
@@ -104,7 +104,7 @@ const Education: React.FC = () => {
                   {certification.courses.map((course, courseIndex) => (
                     <div key={courseIndex} className="flex items-start justify-center md:justify-start">
                       <span className="text-primary-dark mr-sm">•</span>
-                      <span className=" font-mono text-base md:text-lg text-gray-700">
+                      <span className=" font-mono text-sm md:text-base xl:text-lg text-gray-700">
                         {course}
                       </span>
                     </div>

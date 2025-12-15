@@ -11,9 +11,9 @@ interface ArchiveItem {
 
 const Archieve: React.FC = () => {
   return (
-    <section id="archive" className="bg-cream py-4 px-8">
+    <section id="archive" className="bg-cream py-4 px-6 md:px-8">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold font-serif text-primary-dark mb-2xl mt-2xl text-center py-4">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold font-serif text-primary-dark mb-2xl mt-2xl text-center py-4">
           The Archive
         </h2>
 
@@ -36,11 +36,11 @@ const Archieve: React.FC = () => {
                 </div>
 
                 <div className="flex-1 text-center space-y-2xl">
-                  <h3 className="text-3xl font-extrabold font-serif text-primary-dark">
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-extrabold font-serif text-primary-dark">
                     {item.title}
                   </h3>
 
-                  <p className="text-neutral-dark leading-relaxed font-mono mb-lg">
+                  <p className="text-sm md:text-base lg:text-lg text-neutral-dark leading-relaxed font-mono mb-lg">
                     {item.shortDescription}
                   </p>
                 </div>
