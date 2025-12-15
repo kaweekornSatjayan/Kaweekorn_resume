@@ -24,11 +24,11 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="w-full py-2.25 md:py-2 lg:py-2 bg-cream sticky top-0 z-50 shadow-sm">
-      <div className="max-w-container mx-auto px-2 sm:px-6 md:px-8 lg:px-margin">
+    <header className="w-full py-1 md:py-2 lg:py-2 bg-cream sticky top-0 z-50 shadow-sm">
+      <div className="max-w-container mx-auto px-3 sm:px-4 md:px-8 lg:px-margin">
         <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-medium text-navy font-serif">
+            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium text-navy font-serif">
               KS.
             </h1>
           </div>
@@ -93,11 +93,11 @@ const Header: React.FC = () => {
           </nav>
 
           <button 
-            className="md:hidden text-charcoal hover:text-gold transition-colors"
+            className="md:hidden text-charcoal hover:text-gold transition-colors p-1"
             onClick={toggleMobileMenu}
           >
             <svg
-              className="w-6 h-6"
+              className="w-5 h-5"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -114,8 +114,8 @@ const Header: React.FC = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <nav className="md:hidden mt-4">
-            <ul className="flex flex-col space-y-3 font-mono text-sm text-navy">
+          <nav className="md:hidden mt-2">
+            <ul className="flex flex-col space-y-2 font-mono text-xs text-navy">
               <li>
                 <a
                   href="#about"
