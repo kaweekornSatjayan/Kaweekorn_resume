@@ -12,16 +12,20 @@ const Contact: React.FC = () => {
       url: "mailto:satjayan@gmail.com"
     },
     {
+       name: "line",
+      url: "https://line.me/ti/p/3ocf9ht4ru"
+    },
+    {
       name: "facebook",
-      url: "https://facebook.com"
+      url: "https://www.facebook.com/1kaweekron"
     },
     {
       name: "instagram",
-      url: "https://instagram.com"
+      url: "https://www.instagram.com/kavkorn/#"
     },
     {
       name: "Github",
-      url: "https://github.com"
+      url: "https://github.com/kaweekornSatjayan"
     }
   ];
 
