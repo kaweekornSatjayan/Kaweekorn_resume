@@ -28,6 +28,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./kaweekorn_resume
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,6 +39,7 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
+          cache-dependency-path: './kaweekorn_resume/package-lock.json'
       - name: Install dependencies
         run: npm ci
       - name: Build
@@ -46,7 +50,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist folder after build
-          path: './dist'
+          path: './kaweekorn_resume/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
