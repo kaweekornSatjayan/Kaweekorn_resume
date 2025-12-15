@@ -11,26 +11,23 @@ interface ArchiveItem {
 
 const Archieve: React.FC = () => {
   return (
-    <section className="bg-cream py-12xl px-xl">
+    <section id="archive" className="bg-cream py-4 px-8">
       <div className="max-w-6xl mx-auto">
-        {/* Section Header */}
         <h2 className="text-4xl font-bold font-serif text-primary-dark mb-2xl mt-2xl text-center py-4">
           The Archive
         </h2>
 
-        {/* Archive Items */}
         <div className="space-y-xl">
           {archiveData.map((item: ArchiveItem, index) => {
             const isEven = index % 2 === 0;
             return (
               <div
                 key={item.id}
-                className={`flex flex-col md:flex-row items-start gap-8 bg-cream rounded-lg px-2xl py-3xl hover:shadow-md transition-shadow duration-300 ${
+                className={`flex flex-col md:flex-row items-center justify-center gap-8 bg-cream rounded-lg px-2xl py-3xl ${
                   !isEven ? "md:flex-row-reverse" : ""
                 }`}
               >
-                {/* Image */}
-                <div className="flex-1">
+                <div className="flex-1 flex justify-center">
                   <img
                     src={item.img}
                     alt={item.title}
@@ -38,29 +35,14 @@ const Archieve: React.FC = () => {
                   />
                 </div>
 
-                {/* Content */}
-                <div className={`flex-1 space-y-2xl ${!isEven ? "text-right" : "text-left"}`}>
-                  {/* Title */}
+                <div className="flex-1 text-center space-y-2xl">
                   <h3 className="text-3xl font-extrabold font-serif text-primary-dark">
                     {item.title}
                   </h3>
 
-                  {/* Description */}
                   <p className="text-neutral-dark leading-relaxed font-mono mb-lg">
                     {item.shortDescription}
                   </p>
-
-                  {/* Track Tags */}
-                  <div className={`flex flex-wrap gap-sm font-mono ${!isEven ? "justify-end" : "justify-start"}`}>
-                    {item.track.map((tag, index) => (
-                      <span
-                        key={index}
-                        className="px-sm py-xs text-xs font-medium bg-accent text-white rounded-full"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
                 </div>
               </div>
             );

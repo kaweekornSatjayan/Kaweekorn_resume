@@ -42,7 +42,7 @@ const Activities: React.FC = () => {
   };
 
   return (
-    <section className="bg-cream py-2xl md:py-4xl px-4 md:px-xl">
+    <section id="activities" className="bg-cream py-2xl md:py-4xl px-4 md:px-xl">
       <div className="max-w-container mx-auto">
         {/* Section Header */}
         <h2 className="text-2xl md:text-4xl font-bold font-serif text-primary-dark mb-xl md:mb-2xl mt-xl text-center tracking-wide">
@@ -50,7 +50,7 @@ const Activities: React.FC = () => {
         </h2>
 
         {/* Carousel Container */}
-        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden rounded-xl md:rounded-2xl shadow-xl md:shadow-2xl">
+        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden rounded-xl md:rounded-2xl">
           {/* Sliding Container */}
           <div 
             className="flex w-full h-full transition-transform duration-500 ease-in-out"
@@ -89,7 +89,7 @@ const Activities: React.FC = () => {
           <button
             onClick={prevSlide}
             disabled={isTransitioning}
-            className="absolute left-2 md:left-6 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 disabled:opacity-50 text-white p-2 md:p-4 rounded-full shadow-xl transition-all duration-300 hover:scale-110 border border-white/20"
+            className="absolute left-2 md:left-6 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 disabled:opacity-50 text-white p-2 md:p-4 rounded-full transition-all duration-300 hover:scale-110 border border-white/20"
           >
             <svg className="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -99,7 +99,7 @@ const Activities: React.FC = () => {
           <button
             onClick={nextSlide}
             disabled={isTransitioning}
-            className="absolute right-2 md:right-6 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 disabled:opacity-50 text-white p-2 md:p-4 rounded-full shadow-xl transition-all duration-300 hover:scale-110 border border-white/20"
+            className="absolute right-2 md:right-6 top-1/2 transform -translate-y-1/2 bg-white/20 backdrop-blur-sm hover:bg-white/30 disabled:opacity-50 text-white p-2 md:p-4 rounded-full transition-all duration-300 hover:scale-110 border border-white/20"
           >
             <svg className="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
@@ -116,7 +116,7 @@ const Activities: React.FC = () => {
               disabled={isTransitioning}
               className={`transition-all duration-500 ease-out disabled:opacity-50 ${
                 index === currentIndex
-                  ? "w-6 md:w-8 h-2 md:h-2 bg-accent rounded-full shadow-lg"
+                  ? "w-6 md:w-8 h-2 md:h-2 bg-accent rounded-full"
                   : "w-2 md:w-2 h-2 md:h-2 bg-neutral-dark/40 hover:bg-neutral-dark/60 rounded-full"
               }`}
             />

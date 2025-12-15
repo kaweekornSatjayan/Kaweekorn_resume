@@ -4,6 +4,8 @@ import About from './components/sections/About';
 import Skills from './components/sections/Skills';
 import Archieve from './components/sections/Archieve';
 import Activities from './components/sections/Activities';
+import Education from './components/sections/Education';
+import Contact from './components/sections/Contact';
 
 function App() {
   return (
@@ -21,16 +23,18 @@ function App() {
           <Archieve />
           <Activities />
           <Skills />
+          <Education />
+          <Contact />
           
-          {/* TODO: Add Experience, Projects, Contact sections */}
+          {/* TODO: Add Experience, Projects sections */}
           
         </main>
         
       </div>
 
       {/* Footer */}
-      <footer className="bg-primary-dark text-white text-center py-xl">
-        <p>&copy; 2025 Kaweekorn Satjayan. All rights reserved.</p>
+      <footer className="font-heading py-4 bg-cream text-black text-center py-md border-t border-gray-200">
+        <p className="text-sm font-playfair">&copy; 2025 Kaweekorn Satjayan</p>
       </footer>
     </div>
   )

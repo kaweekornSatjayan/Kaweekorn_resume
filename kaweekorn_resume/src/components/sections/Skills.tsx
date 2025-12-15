@@ -17,7 +17,7 @@ const Skills: React.FC = () => {
   };
 
   return (
-    <section className="bg-white  md:px-xl">
+    <section id="skills" className="bg-cream py-6xl px-4 md:px-xl">
       <div className="max-w-container mx-auto">
         {/* Section Header */}
         <div className="text-center mb-4xl">
@@ -28,11 +28,11 @@ const Skills: React.FC = () => {
         </div>
 
         {/* Skills Grid */}
-        <div className="space-y-3xl max-w-4xl mx-auto">
+        <div className="space-y-xl max-w-4xl mx-auto">
           {Object.entries(skillData).map(([category, skills], index) => (
-            <div key={index} className="text-center py-xl">
+            <div key={index} className="text-center py-md">
               {/* Category Title */}
-              <h3 className="text-xl md:text-2xl font-bold font-serif text-primary-dark mb-xl">
+              <h3 className="text-xl md:text-2xl font-bold font-serif text-primary-dark mb-md">
                 {category}
               </h3>
               

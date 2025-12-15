@@ -2,8 +2,9 @@ import React from "react";
 
 const About: React.FC = () => {
   return (
-    <section className="bg-white rounded-lg shadow-md p-xl py-3">
-      <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-center max-w-4xl mx-auto">
+    <section className="bg-cream py-xl px-4 md:px-xl">
+      <div className="max-w-container mx-auto">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-center max-w-4xl mx-auto">
         <div className="text text-center">
           <h2 className="font-heading text-5xl font-bold text-text-primary mb-gutter pb-2 relative">
             Hello , I'm <br></br>
@@ -23,6 +24,7 @@ const About: React.FC = () => {
             alt="Profile" 
             className="w-64 h-64 border-2 border-bronze rounded-lg object-cover"
           />
+        </div>
         </div>
       </div>
     </section>

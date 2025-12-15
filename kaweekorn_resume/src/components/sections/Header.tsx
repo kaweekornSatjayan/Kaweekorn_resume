@@ -1,73 +1,101 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Header: React.FC = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    setIsMobileMenuOpen(false);
+    
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      const headerHeight = 80; // Approximate header height
+      const targetPosition = targetElement.offsetTop - headerHeight;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
-    <header className="w-full py-2.25 md:py-2 lg:py-2 bg-cream">
+    <header className="w-full py-2.25 md:py-2 lg:py-2 bg-cream sticky top-0 z-50 shadow-sm">
       <div className="max-w-container mx-auto px-2 sm:px-6 md:px-8 lg:px-margin">
         <div className="flex justify-between items-center">
-          {/*Name Element */}
           <div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-medium text-navy font-serif">
               KS.
             </h1>
           </div>
 
-          {/* Navigation Bar Element */}
           <nav className="hidden md:block">
             <ul className="flex space-x-4 md:space-x-6 lg:space-x-8 font-mono text-sm md:text-base text-navy">
               <li>
                 <a
                   href="#about"
                   className="text-navy hover:text-gold transition-colors"
+                  onClick={(e) => handleLinkClick(e, 'about')}
                 >
                   About
                 </a>
               </li>
               <li>
                 <a
+                  href="#archive"
+                  className="text-navy hover:text-gold transition-colors"
+                  onClick={(e) => handleLinkClick(e, 'archive')}
+                >
+                  Archive
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#activities"
+                  className="text-navy hover:text-gold transition-colors"
+                  onClick={(e) => handleLinkClick(e, 'activities')}
+                >
+                  Activities
+                </a>
+              </li>
+              <li>
+                <a
                   href="#skills"
                   className="text-navy hover:text-gold transition-colors"
+                  onClick={(e) => handleLinkClick(e, 'skills')}
                 >
                   Skills
                 </a>
               </li>
               <li>
                 <a
-                  href="#experience"
+                  href="#education"
                   className="text-navy hover:text-gold transition-colors"
+                  onClick={(e) => handleLinkClick(e, 'education')}
                 >
-                  Archieve
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  className="text-navy hover:text-gold transition-colors"
-                >
-                 Education
+                  Education
                 </a>
               </li>
               <li>
                 <a
                   href="#contact"
                   className="text-navy hover:text-gold transition-colors"
+                  onClick={(e) => handleLinkClick(e, 'contact')}
                 >
                   Contact
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="text-navy hover:text-gold transition-colors"
-                >
-                 Downlod CV
                 </a>
               </li>
             </ul>
           </nav>
 
-          {/* Mobile Menu Button */}
-          <button className="md:hidden text-charcoal hover:text-gold transition-colors">
+          <button 
+            className="md:hidden text-charcoal hover:text-gold transition-colors"
+            onClick={toggleMobileMenu}
+          >
             <svg
               className="w-6 h-6"
               fill="none"
@@ -78,11 +106,73 @@ const Header: React.FC = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
+                d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
               />
             </svg>
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <nav className="md:hidden mt-4">
+            <ul className="flex flex-col space-y-3 font-mono text-sm text-navy">
+              <li>
+                <a
+                  href="#about"
+                  className="block text-navy hover:text-gold transition-colors"
+                  onClick={(e) => handleLinkClick(e, 'about')}
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#archive"
+                  className="block text-navy hover:text-gold transition-colors"
+                  onClick={(e) => handleLinkClick(e, 'archive')}
+                >
+                  Archive
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#activities"
+                  className="block text-navy hover:text-gold transition-colors"
+                  onClick={(e) => handleLinkClick(e, 'activities')}
+                >
+                  Activities
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  className="block text-navy hover:text-gold transition-colors"
+                  onClick={(e) => handleLinkClick(e, 'skills')}
+                >
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#education"
+                  className="block text-navy hover:text-gold transition-colors"
+                  onClick={(e) => handleLinkClick(e, 'education')}
+                >
+                  Education
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="block text-navy hover:text-gold transition-colors"
+                  onClick={(e) => handleLinkClick(e, 'contact')}
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+        )}
       </div>
     </header>
   );
