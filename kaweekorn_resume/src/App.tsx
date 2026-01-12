@@ -1,6 +1,7 @@
 // Import section components
 import Header from './components/sections/Header';
 import About from './components/sections/About';
+import UXUIWorks from './components/sections/UXUIWorks';
 import Skills from './components/sections/Skills';
 import Archieve from './components/sections/Archieve';
 import Activities from './components/sections/Activities';
@@ -20,6 +21,7 @@ function App() {
         {/* Main Content */}
         <main className="">
           <About />
+          <UXUIWorks />
           <Archieve />
           <Activities />
           <Skills />
